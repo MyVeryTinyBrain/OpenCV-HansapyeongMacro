@@ -1,5 +1,2 @@
 # HansapyeongMacroOpenCV
-
-
-
-# test
+# ver 1.0a
