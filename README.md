@@ -7,4 +7,4 @@
 - Multi title support
 
 ## ver 1.02
-- Start Inter Explorer support
+- Inter Explorer startup support
