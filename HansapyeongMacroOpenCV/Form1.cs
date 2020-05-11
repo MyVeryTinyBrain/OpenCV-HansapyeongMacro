@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Net;
 using System.Net.Sockets;
+using System.Diagnostics;
 
 namespace HansapyeongMacroOpenCV
 {
@@ -47,6 +48,8 @@ namespace HansapyeongMacroOpenCV
             m_stateMachine = new StateMachine(m_captureMachine, threadStopEvent);
 
             Config.LoadConfig();
+
+            if (Config.data.start_IE) Process.Start("iexplore.exe", "http://www.hakjum.com/");
         }
 
         private void button_start_Click(object sender, EventArgs e)

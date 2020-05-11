@@ -34,6 +34,7 @@ namespace HansapyeongMacroOpenCV
             private const double BUTTON_OK_ACCURACY = 0.6;
             private const double BUTTON_EXIT_ACCURACY = 0.9;
             private const bool SHUTDOWN = false;
+            private const bool START_IE = true;
 
             // Using Configs
             public int adjustment_x = ADJUSTMENT_X;
@@ -53,6 +54,7 @@ namespace HansapyeongMacroOpenCV
             public double button_exit_accuracy = BUTTON_EXIT_ACCURACY;
 
             public bool shutdown = SHUTDOWN;
+            public bool start_IE = START_IE;
         }
 
         public const string FILE_NAME = "config.bin";

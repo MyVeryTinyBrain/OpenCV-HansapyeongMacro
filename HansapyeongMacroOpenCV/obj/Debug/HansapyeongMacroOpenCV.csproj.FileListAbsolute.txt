@@ -22,3 +22,4 @@ C:\Users\mymis\source\repos\HansapyeongMacroOpenCV\HansapyeongMacroOpenCV\obj\De
 C:\Users\mymis\source\repos\HansapyeongMacroOpenCV\HansapyeongMacroOpenCV\obj\Debug\HansapyeongMacroOpenCV.pdb
 C:\Users\mymis\source\repos\HansapyeongMacroOpenCV\HansapyeongMacroOpenCV\obj\Debug\HansapyeongMacroOpenCV.Form1.resources
 C:\Users\mymis\source\repos\HansapyeongMacroOpenCV\HansapyeongMacroOpenCV\obj\Debug\HansapyeongMacroOpenCV.Form2.resources
+C:\Users\mymis\source\repos\HansapyeongMacroOpenCV\HansapyeongMacroOpenCV\obj\Debug\HansapyeongMacroOpenCV.Form3.resources

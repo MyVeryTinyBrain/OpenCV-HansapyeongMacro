@@ -36,6 +36,7 @@ namespace HansapyeongMacroOpenCV
             "button_begin_wait: 학습 시작 버튼을 누르기 전 까지의 대기시간입니다.\r\n" +
             "accuracy: 각 이미지의 정확도 판정입니다.\r\n" +
             "shutdown: 모든 작업을 끝내고 컴퓨터를 종료합니다.\r\n" +
+            "Start IE: 프로그램 실행 시 Inter Explorer로 한사평에 접속합니다.\r\n" +
             "reset: 모든 설정을 초기화합니다.";
 
         private Form3 m_imageForm;
@@ -91,6 +92,8 @@ namespace HansapyeongMacroOpenCV
             bar_button_exit_accuracy_Scroll(null, null);
 
             checkBox_shutdown.Checked = Config.data.shutdown;
+
+            checkBox_startIE.Checked = Config.data.start_IE;
         }
 
         private void Reflect()
@@ -109,6 +112,7 @@ namespace HansapyeongMacroOpenCV
             Config.data.button_ok_accuracy = bar_button_ok_accuracy.Value * 0.1;
             Config.data.button_exit_accuracy = bar_button_exit_accuracy.Value * 0.1;
             Config.data.shutdown = checkBox_shutdown.Checked;
+            Config.data.start_IE = checkBox_startIE.Checked;
         }
 
         private void Form2_Shown(object sender, EventArgs e)

@@ -70,6 +70,7 @@
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.textbox_adjustment_y = new System.Windows.Forms.TextBox();
             this.bar_adjustment_y = new System.Windows.Forms.TrackBar();
+            this.checkBox_startIE = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.bar_adjustment_x)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -538,12 +539,24 @@
             this.bar_adjustment_y.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.bar_adjustment_y.Scroll += new System.EventHandler(this.bar_adjustment_y_Scroll);
             // 
+            // checkBox_startIE
+            // 
+            this.checkBox_startIE.AutoSize = true;
+            this.checkBox_startIE.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox_startIE.Location = new System.Drawing.Point(533, 43);
+            this.checkBox_startIE.Name = "checkBox_startIE";
+            this.checkBox_startIE.Size = new System.Drawing.Size(64, 16);
+            this.checkBox_startIE.TabIndex = 13;
+            this.checkBox_startIE.Text = "Start IE";
+            this.checkBox_startIE.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(610, 524);
+            this.Controls.Add(this.checkBox_startIE);
             this.Controls.Add(this.groupBox13);
             this.Controls.Add(this.button_help);
             this.Controls.Add(this.button_reset);
@@ -652,5 +665,6 @@
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.TextBox textbox_adjustment_y;
         private System.Windows.Forms.TrackBar bar_adjustment_y;
+        private System.Windows.Forms.CheckBox checkBox_startIE;
     }
 }
