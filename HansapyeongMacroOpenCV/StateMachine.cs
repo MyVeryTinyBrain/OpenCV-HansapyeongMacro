@@ -86,7 +86,11 @@ namespace HansapyeongMacroOpenCV
                                 result = cm.Capture(CaptureMachine.BMP_BOX_UNCOMPLETE);
                                 if (result.accuracy >= Config.data.box_uncomplete_accuracy)
                                 {
-                                    mouse_move_click(result.center_x - Config.data.adjustment, result.center_y);
+                                    // 1줄 제목 처리
+                                    mouse_move_click(result.center_x - Config.data.adjustment_x, result.center_y);
+                                    Thread.Sleep(10);
+                                    // 2줄 제목 처리
+                                    mouse_move_click(result.center_x - Config.data.adjustment_x, result.center_y + Config.data.adjustment_y);
                                     state = StudyState.WaitForStartStudy;
                                     logger.fLog("수강 시작", Color.Green);
                                 }
@@ -105,7 +109,7 @@ namespace HansapyeongMacroOpenCV
                         case StudyState.WaitForStartStudy:
                             {
                                 // 시작버튼이 늦게 나오므로 잠시 대기
-                                Thread.Sleep((int)(Config.data.button_begin_wait * 1000));
+                                Thread.Sleep((int)(Config.data.button_begin_wait));
 
                                 CaptureResult button_begin1_result = cm.Capture(CaptureMachine.BMP_BUTTON_BEGIN1);
                                 CaptureResult button_begin2_result = cm.Capture(CaptureMachine.BMP_BUTTON_BEGIN2);

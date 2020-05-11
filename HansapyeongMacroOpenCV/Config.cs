@@ -20,9 +20,10 @@ namespace HansapyeongMacroOpenCV
         public class ConfigData
         {
             // Default Configs
-            private const int ADJUSTMENT = 370;
-            private const double TICK = 5.0;
-            private const double BUTTON_BEGIN_WAIT = 1.0;
+            private const int ADJUSTMENT_X = 375;
+            private const int ADJUSTMENT_Y = 16;
+            private const double TICK = 5000.0;
+            private const double BUTTON_BEGIN_WAIT = 1000.0;
             private const double BOX_UNCOMPLETE_ACCURACY = 0.9;
             private const double BUTTON_BEGIN_ACCURACY = 0.6;
             private const double STATE_QUIZ_ACCURACY = 0.9;
@@ -35,7 +36,8 @@ namespace HansapyeongMacroOpenCV
             private const bool SHUTDOWN = false;
 
             // Using Configs
-            public int adjustment = ADJUSTMENT;
+            public int adjustment_x = ADJUSTMENT_X;
+            public int adjustment_y = ADJUSTMENT_Y;
 
             public double tick = TICK;
             public double button_begin_wait = BUTTON_BEGIN_WAIT;

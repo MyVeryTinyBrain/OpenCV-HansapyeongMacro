@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bar_adjustment = new System.Windows.Forms.TrackBar();
+            this.bar_adjustment_x = new System.Windows.Forms.TrackBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textbox_adjustment = new System.Windows.Forms.TextBox();
+            this.textbox_adjustment_x = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textbox_tick = new System.Windows.Forms.TextBox();
             this.bar_tick = new System.Windows.Forms.TrackBar();
@@ -67,7 +67,10 @@
             this.checkBox_shutdown = new System.Windows.Forms.CheckBox();
             this.button_reset = new System.Windows.Forms.Button();
             this.button_help = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.bar_adjustment)).BeginInit();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.textbox_adjustment_y = new System.Windows.Forms.TextBox();
+            this.bar_adjustment_y = new System.Windows.Forms.TrackBar();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_adjustment_x)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar_tick)).BeginInit();
@@ -91,46 +94,48 @@
             ((System.ComponentModel.ISupportInitialize)(this.bar_button_quiz_ox_accuracy)).BeginInit();
             this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar_state_fullstudy_accuracy)).BeginInit();
+            this.groupBox13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_adjustment_y)).BeginInit();
             this.SuspendLayout();
             // 
-            // bar_adjustment
+            // bar_adjustment_x
             // 
-            this.bar_adjustment.Location = new System.Drawing.Point(6, 20);
-            this.bar_adjustment.Maximum = 500;
-            this.bar_adjustment.Name = "bar_adjustment";
-            this.bar_adjustment.Size = new System.Drawing.Size(167, 45);
-            this.bar_adjustment.TabIndex = 0;
-            this.bar_adjustment.TickFrequency = 20;
-            this.bar_adjustment.TickStyle = System.Windows.Forms.TickStyle.Both;
-            this.bar_adjustment.Scroll += new System.EventHandler(this.bar_adjustment_Scroll);
+            this.bar_adjustment_x.Location = new System.Drawing.Point(6, 20);
+            this.bar_adjustment_x.Maximum = 500;
+            this.bar_adjustment_x.Name = "bar_adjustment_x";
+            this.bar_adjustment_x.Size = new System.Drawing.Size(167, 45);
+            this.bar_adjustment_x.TabIndex = 0;
+            this.bar_adjustment_x.TickFrequency = 20;
+            this.bar_adjustment_x.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.bar_adjustment_x.Scroll += new System.EventHandler(this.bar_adjustment_x_Scroll);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textbox_adjustment);
-            this.groupBox1.Controls.Add(this.bar_adjustment);
+            this.groupBox1.Controls.Add(this.textbox_adjustment_x);
+            this.groupBox1.Controls.Add(this.bar_adjustment_x);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(228, 67);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "adjustment";
+            this.groupBox1.Text = "adjustment_x";
             // 
-            // textbox_adjustment
+            // textbox_adjustment_x
             // 
-            this.textbox_adjustment.Location = new System.Drawing.Point(171, 20);
-            this.textbox_adjustment.Multiline = true;
-            this.textbox_adjustment.Name = "textbox_adjustment";
-            this.textbox_adjustment.ReadOnly = true;
-            this.textbox_adjustment.Size = new System.Drawing.Size(51, 41);
-            this.textbox_adjustment.TabIndex = 1;
-            this.textbox_adjustment.Text = "\r\n0";
-            this.textbox_adjustment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_adjustment_x.Location = new System.Drawing.Point(171, 20);
+            this.textbox_adjustment_x.Multiline = true;
+            this.textbox_adjustment_x.Name = "textbox_adjustment_x";
+            this.textbox_adjustment_x.ReadOnly = true;
+            this.textbox_adjustment_x.Size = new System.Drawing.Size(51, 41);
+            this.textbox_adjustment_x.TabIndex = 1;
+            this.textbox_adjustment_x.Text = "\r\n0";
+            this.textbox_adjustment_x.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textbox_tick);
             this.groupBox2.Controls.Add(this.bar_tick);
-            this.groupBox2.Location = new System.Drawing.Point(12, 85);
+            this.groupBox2.Location = new System.Drawing.Point(12, 158);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(228, 67);
             this.groupBox2.TabIndex = 3;
@@ -163,7 +168,7 @@
             // 
             this.groupBox3.Controls.Add(this.textbox_button_begin_wait);
             this.groupBox3.Controls.Add(this.bar_button_begin_wait);
-            this.groupBox3.Location = new System.Drawing.Point(12, 158);
+            this.groupBox3.Location = new System.Drawing.Point(12, 231);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(228, 67);
             this.groupBox3.TabIndex = 3;
@@ -195,7 +200,7 @@
             // 
             this.groupBox4.Controls.Add(this.textbox_box_uncomplete_accuracy);
             this.groupBox4.Controls.Add(this.bar_box_uncomplete_accuracy);
-            this.groupBox4.Location = new System.Drawing.Point(12, 231);
+            this.groupBox4.Location = new System.Drawing.Point(12, 304);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(228, 67);
             this.groupBox4.TabIndex = 3;
@@ -226,7 +231,7 @@
             // 
             this.groupBox5.Controls.Add(this.textbox_button_begin_accuracy);
             this.groupBox5.Controls.Add(this.bar_button_begin_accuracy);
-            this.groupBox5.Location = new System.Drawing.Point(12, 304);
+            this.groupBox5.Location = new System.Drawing.Point(12, 377);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(228, 67);
             this.groupBox5.TabIndex = 3;
@@ -257,7 +262,7 @@
             // 
             this.groupBox6.Controls.Add(this.textbox_state_quiz_accuracy);
             this.groupBox6.Controls.Add(this.bar_state_quiz_accuracy);
-            this.groupBox6.Location = new System.Drawing.Point(12, 377);
+            this.groupBox6.Location = new System.Drawing.Point(12, 450);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(228, 67);
             this.groupBox6.TabIndex = 3;
@@ -483,9 +488,9 @@
             // 
             // button_reset
             // 
-            this.button_reset.Location = new System.Drawing.Point(480, 312);
+            this.button_reset.Location = new System.Drawing.Point(246, 457);
             this.button_reset.Name = "button_reset";
-            this.button_reset.Size = new System.Drawing.Size(117, 59);
+            this.button_reset.Size = new System.Drawing.Size(102, 59);
             this.button_reset.TabIndex = 11;
             this.button_reset.Text = "Reset";
             this.button_reset.UseVisualStyleBackColor = true;
@@ -493,20 +498,53 @@
             // 
             // button_help
             // 
-            this.button_help.Location = new System.Drawing.Point(480, 385);
+            this.button_help.Location = new System.Drawing.Point(367, 457);
             this.button_help.Name = "button_help";
-            this.button_help.Size = new System.Drawing.Size(117, 59);
+            this.button_help.Size = new System.Drawing.Size(107, 59);
             this.button_help.TabIndex = 12;
             this.button_help.Text = "Help";
             this.button_help.UseVisualStyleBackColor = true;
             this.button_help.Click += new System.EventHandler(this.button_help_Click);
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.textbox_adjustment_y);
+            this.groupBox13.Controls.Add(this.bar_adjustment_y);
+            this.groupBox13.Location = new System.Drawing.Point(12, 85);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(228, 67);
+            this.groupBox13.TabIndex = 3;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "adjustment_y";
+            // 
+            // textbox_adjustment_y
+            // 
+            this.textbox_adjustment_y.Location = new System.Drawing.Point(171, 20);
+            this.textbox_adjustment_y.Multiline = true;
+            this.textbox_adjustment_y.Name = "textbox_adjustment_y";
+            this.textbox_adjustment_y.ReadOnly = true;
+            this.textbox_adjustment_y.Size = new System.Drawing.Size(51, 41);
+            this.textbox_adjustment_y.TabIndex = 1;
+            this.textbox_adjustment_y.Text = "\r\n0";
+            this.textbox_adjustment_y.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // bar_adjustment_y
+            // 
+            this.bar_adjustment_y.Location = new System.Drawing.Point(6, 20);
+            this.bar_adjustment_y.Maximum = 20;
+            this.bar_adjustment_y.Name = "bar_adjustment_y";
+            this.bar_adjustment_y.Size = new System.Drawing.Size(167, 45);
+            this.bar_adjustment_y.TabIndex = 0;
+            this.bar_adjustment_y.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.bar_adjustment_y.Scroll += new System.EventHandler(this.bar_adjustment_y_Scroll);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(610, 456);
+            this.ClientSize = new System.Drawing.Size(610, 524);
+            this.Controls.Add(this.groupBox13);
             this.Controls.Add(this.button_help);
             this.Controls.Add(this.button_reset);
             this.Controls.Add(this.checkBox_shutdown);
@@ -526,7 +564,7 @@
             this.Text = "Configs";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Shown += new System.EventHandler(this.Form2_Shown);
-            ((System.ComponentModel.ISupportInitialize)(this.bar_adjustment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_adjustment_x)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -562,6 +600,9 @@
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar_state_fullstudy_accuracy)).EndInit();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bar_adjustment_y)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -569,7 +610,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TrackBar bar_adjustment;
+        private System.Windows.Forms.TrackBar bar_adjustment_x;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TrackBar bar_tick;
@@ -594,7 +635,7 @@
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.TrackBar bar_state_fullstudy_accuracy;
         private System.Windows.Forms.CheckBox checkBox_shutdown;
-        private System.Windows.Forms.TextBox textbox_adjustment;
+        private System.Windows.Forms.TextBox textbox_adjustment_x;
         private System.Windows.Forms.TextBox textbox_tick;
         private System.Windows.Forms.TextBox textbox_button_begin_wait;
         private System.Windows.Forms.TextBox textbox_box_uncomplete_accuracy;
@@ -608,5 +649,8 @@
         private System.Windows.Forms.TextBox textbox_state_fullstudy_accuracy;
         private System.Windows.Forms.Button button_reset;
         private System.Windows.Forms.Button button_help;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.TextBox textbox_adjustment_y;
+        private System.Windows.Forms.TrackBar bar_adjustment_y;
     }
 }

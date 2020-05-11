@@ -50,13 +50,16 @@ namespace HansapyeongMacroOpenCV
         private void Initalize()
         {
             // 1~6
-            bar_adjustment.Value = Config.data.adjustment;
-            bar_adjustment_Scroll(null, null);
+            bar_adjustment_x.Value = Config.data.adjustment_x;
+            bar_adjustment_x_Scroll(null, null);
 
-            bar_tick.Value = (int)Config.data.tick;
+            bar_adjustment_y.Value = Config.data.adjustment_y;
+            bar_adjustment_y_Scroll(null, null);
+
+            bar_tick.Value = (int)(Config.data.tick * 0.001);
             bar_tick_Scroll(null, null);
 
-            bar_button_begin_wait.Value = (int)(Config.data.button_begin_wait);
+            bar_button_begin_wait.Value = (int)(Config.data.button_begin_wait * 0.001);
             bar_button_begin_wait_Scroll(null, null);
 
             bar_box_uncomplete_accuracy.Value = (int)(Config.data.box_uncomplete_accuracy * 10);
@@ -92,9 +95,10 @@ namespace HansapyeongMacroOpenCV
 
         private void Reflect()
         {
-            Config.data.adjustment = bar_adjustment.Value;
-            Config.data.tick = bar_tick.Value;
-            Config.data.button_begin_wait = bar_button_begin_wait.Value;
+            Config.data.adjustment_x = bar_adjustment_x.Value;
+            Config.data.adjustment_y = bar_adjustment_y.Value;
+            Config.data.tick = bar_tick.Value * 1000;
+            Config.data.button_begin_wait = bar_button_begin_wait.Value * 1000;
             Config.data.box_uncomplete_accuracy = bar_box_uncomplete_accuracy.Value * 0.1;
             Config.data.button_begin_accuracy = bar_button_begin_accuracy.Value * 0.1;
             Config.data.state_quiz_accuracy = bar_state_quiz_accuracy.Value * 0.1;
@@ -124,9 +128,14 @@ namespace HansapyeongMacroOpenCV
             Initalize();
         }
 
-        private void bar_adjustment_Scroll(object sender, EventArgs e)
+        private void bar_adjustment_x_Scroll(object sender, EventArgs e)
         {
-            textbox_adjustment.Text = "\r\n" + bar_adjustment.Value.ToString();
+            textbox_adjustment_x.Text = "\r\n" + bar_adjustment_x.Value.ToString();
+        }
+
+        private void bar_adjustment_y_Scroll(object sender, EventArgs e)
+        {
+            textbox_adjustment_y.Text = "\r\n" + bar_adjustment_y.Value.ToString();
         }
 
         private void bar_tick_Scroll(object sender, EventArgs e)
