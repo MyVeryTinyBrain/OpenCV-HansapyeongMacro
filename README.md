@@ -6,5 +6,5 @@
 - Fix time scale
 - Multi title support
 
-## ver 1.02
+## ver 1.02[Download][https://github.com/MyMissingBrain/HansapyeongMacroOpenCV/blob/master/HansapyeongMacroOpenCV/bin/Release.zip]
 - Inter Explorer startup support
