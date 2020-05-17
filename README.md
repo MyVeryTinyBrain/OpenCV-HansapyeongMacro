@@ -7,5 +7,5 @@
 - Multi title support
 
 ## ver 1.02[[Download]][DownloadLink]
-[DownloadLink]: https://github.com/MyMissingBrain/HansapyeongMacroOpenCV/blob/master/HansapyeongMacroOpenCV/bin/Release.zip
+[DownloadLink]: https://github.com/MyMissingBrain/HansapyeongMacroOpenCV/raw/master/HansapyeongMacroOpenCV/bin/Release.zip
 - Inter Explorer startup support
