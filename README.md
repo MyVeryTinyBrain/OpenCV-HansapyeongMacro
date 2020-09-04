@@ -1,6 +1,6 @@
 # HansapyeongMacroOpenCV
 ## ver 1.0
-- 배포
+- Release
 
 ## ver 1.01
 - Update time interver of image search
