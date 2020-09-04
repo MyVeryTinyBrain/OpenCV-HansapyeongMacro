@@ -8,4 +8,4 @@
 
 ## ver 1.02 [[Download]][DownloadLink]
 [DownloadLink]: https://github.com/MyMissingBrain/HansapyeongMacroOpenCV/raw/master/HansapyeongMacroOpenCV/bin/Release.zip
-- Support startup internet explorer
+- Support startup to internet explorer
